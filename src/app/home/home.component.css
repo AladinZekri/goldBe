@@ -1,0 +1,138 @@
+.red{
+    background-color: #966706;
+    height: 100%;
+    width: 100%;
+}
+ngb-carousel .wrapper {
+    position: relative;
+    height: 0;
+    padding-top: 55%; /* Keep ratio for 900x500 images */
+    height: 50vh !important
+
+  }
+  .img{
+      width: 100%;
+  }
+  .imgjp{
+    padding-top: 0.5cm;
+    width: 40%;
+}
+  .items{
+    background-color: #414141;
+    position: relative; top: 0; left: 0
+}
+  
+  ngb-carousel .wrapper>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .textRed{
+    color: white ;
+  }
+  
+
+  .cust{
+background-color: #e9e9e9;
+border-color: #966706;
+border-radius: 2%;
+color: blue;
+  }
+
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #966706 !important;
+    border: 1px solid #966706;
+    color: white;
+
+  
+    /* font-weight: bold; */
+}
+
+.pad{
+  text-align: center;
+  padding-top: 25px;
+}
+
+.cutombtn{
+  background-color: #966706 !important;
+  color: white;
+  border-color: #966706;
+  border-radius: 4cm;
+  border: 1px solid;
+
+  font-weight: bold; 
+}
+
+.outerDiv{
+  padding-top: 1cm;
+
+}
+
+.upperDiv{
+background-color: #966706;
+color: white;
+width: 6cm;
+height: 4cm;
+margin: 0 auto;
+padding: 1.2cm;
+border-top-left-radius: 5%;
+border-top-right-radius: 5%;
+
+}
+.lowerDiv{
+font-weight: bold;
+background-color: white;
+color: #966706;
+height: 4cm;
+width: 6cm;
+margin: 0 auto;
+padding: 1.2cm;
+border-bottom-left-radius: 5%;
+border-bottom-right-radius: 5%;
+border: #966706 1px solid;
+}
+
+.jack{
+  /* padding-top: 5cm; */
+  height: 10cm;
+position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.imgJack{
+  margin-top: 1cm;
+  height: 10cm;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url(../../assets/jack.png); */
+}
+
+#slider {
+top: 1cm;
+  position:relative;
+  left:0;
+  height:400px;
+
+
+}
+
+
+#content {
+  position:inherit;
+  top: -6.5cm;
+  left: 0cm;
+  color:#f6de9c
+  ;
+  
+  font-size: 1.5cm;
+}
+
+#content #text {
+  position:relative;
+
+  color:#966706;
+}
+

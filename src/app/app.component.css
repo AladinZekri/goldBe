@@ -1,0 +1,39 @@
+
+.navby{
+    background-color: black;
+
+}
+.img{
+    height: 1.2cm;
+    max-width: 8cm;
+}
+.black{
+
+    color: #966706;
+}
+.color{
+    color: #966706;
+}
+.white{
+    color: white
+}
+.redLog{
+
+    color: #966706;
+    border: #966706 1px solid;
+    border-radius: 2px;
+    text-align: center;
+    width: 2cm;
+}
+.red{
+    font-size: large;
+    color: #966706;
+}
+.line{
+    font-size: large;
+    border-right: #966706 3px solid;
+}
+.items{
+    background-color: black;
+    padding: 1%;
+}

@@ -1,0 +1,17 @@
+.imgJack{
+    margin-top: 1cm;
+    height: 5cm;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(../../assets/jack.png); */
+  }
+  
+#content {
+    position:inherit;
+    top: -3.55cm;
+    left: 0cm;
+    color:#f6de9c
+    ;
+    
+    font-size: 0.5cm;
+  }

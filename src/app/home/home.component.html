@@ -1,0 +1,74 @@
+<div class="container-fluid items">
+
+
+
+    <!--  jackpot section -->
+
+    <div class="container-fluid items">
+
+
+        <div class="row">
+
+
+            <div class="col" style="text-align: center;">
+                <!-- <h2 class="textRed"> Jackpot </h2> -->
+                <!-- <h1>{{display}}</h1> -->
+                <!-- <div class="outerDiv">
+                    <div class="upperDiv">
+                        <h1>{{display}}.{{after}}</h1>
+                    </div>
+                    <div class="lowerDiv">
+                        <h1>TND</h1>
+                    </div>
+                </div> -->
+
+                <img class="imgJack" src="assets/jackpot.png">
+                <div id="content">
+                    <h3> {{display}}.{{after}} </h3>
+                    <h4> {{lastwinner}}</h4>
+
+                </div>
+
+            </div>
+
+
+
+            <!--  winners section -->
+
+            <div class="col"><br>
+                <h2 class="textRed" style="text-align: center;">WINNERS </h2>
+                <div style="text-align: center;" class=" row">
+                    <div class="col">
+                        <button (click)="getWinnersLimit()" class="btn btn-primary">Latest</button>
+                    </div>
+                    <div class="col">
+                        <button (click)="getWinnersAmountLimit()" class="btn btn-primary">Top Jackpots</button>
+                    </div>
+
+                </div><br>
+                <div *ngFor=" let item of winner">
+                    <div>
+                        <div class="row" style="border: 1px solid white;">
+                            <div class="col-sm">
+                                <img class="imgjp" src="assets/jp.jpg"><br>&nbsp;
+                            </div>
+                            <div class="col-sm pad" style="color: white;">
+                                {{item.name}}
+                            </div>
+                            <div class="col-sm pad" style="color: white;">
+                                {{item.winDate| date: 'dd/MM/yyyy' }}
+                            </div>
+                            <div class="col-sm pad">
+                                <button class="cutombtn" disabled> {{item.amout}} TND</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <br><br><br>
+        </div>

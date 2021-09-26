@@ -1,0 +1,122 @@
+<div id="app" style="background-color: #414141;">
+  <nav class="navbar navbar-expand-lg navbar-dark navby">
+    <div class="line"> <a href="#"> <img class="img" src="assets/logo-mobile.png"> </a></div>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a href="/home" class="nav-link" routerLink="home">
+          <div class="red"> &nbsp; Jackpot</div>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a href="/Jackpot-Logo" class="nav-link" routerLink="Jackpot-Logo">
+          <div class="red"> &nbsp; Jackpot-Logo</div>
+        </a>
+      </li>
+    </ul>
+
+
+    <button class="navbar-toggler color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">
+            <div class="red">Winners</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/JackpotTimer" class="nav-link" *ngIf="isLoggedIn" routerLink="JackpotTimer">
+            <div class="red">Jackpot Timer</div>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+        <li class="nav-item">
+          <a href="https://wowbet216.com" class="nav-link">
+            <div class="black "> Back to GoldBet &nbsp;</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <div class="black line "> {{now | date:'hh:mm:ss'}} &nbsp;</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/login" class="nav-link " routerLink="login">
+            <div class="redLog">Private</div>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+        <li class="nav-item">
+          <a href="https://wowbet216.com" class="nav-link">
+            <div class="black "> Back to GoldBet &nbsp;</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <div class="black line "> {{now | date:'hh:mm:ss'}} &nbsp;</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/profile" class="nav-link" routerLink="profile">
+            <div class="red">{{ username }}</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/register" class="nav-link" routerLink="register">
+            <div class="red">Sign Up</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href class="nav-link" (click)="logout()">
+            <div class="redLog">LogOut</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <br>
+  <router-outlet></router-outlet>
+  <br>
+
+  <div class="items">
+    <div class=" row">
+      <div class="col">
+        <label class="black"> About </label><br><label class="white">
+          Responsible Gaming <br>
+          Privacy Policy <br>
+          Contact Us</label>
+      </div>
+      <div class="col">
+        <label class="black"> Help </label><br><label class="white">
+          Sport Betting <br>
+          FAQs <br>
+          Casino</label>
+      </div>
+      <div class="col">
+        <label class="black"> General Terms & Conditions </label><br><label class="white">
+          General Terms & Conditions <br>
+          Sport Terms & Conditions</label>
+      </div>
+
+      <div class="col">
+        <label class="black"> About </label><br><label class="white">
+          Live Calendar <br>
+          Result</label>
+      </div>
+      <div class="col white">
+        © services@GoldBet.com
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center;background-color: black;"> <img class="img" src="assets/logo-mobile.png"></div>
+
+</div>
